@@ -4,7 +4,7 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "build": "ng build",
+    "build": "ng build && cap sync",
     "lint": "ng lint",
     "ng": "ng",
     "prepare": "husky",
