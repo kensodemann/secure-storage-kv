@@ -11,5 +11,12 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-list>
+    <ion-item *ngFor="let pair of myPairs">
+      <ion-label>
+        <div>{{pair.key}}</div>
+        <div>{{pair.value}}</div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

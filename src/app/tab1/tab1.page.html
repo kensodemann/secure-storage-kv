@@ -11,5 +11,17 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-list>
+    <ion-item>
+      <ion-input label="Key" label-placement="floating" [(ngModel)]="myKey"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Value" label-placement="floating" [(ngModel)]="myValue"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-button expand="block" (click)="set()">Set</ion-button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
